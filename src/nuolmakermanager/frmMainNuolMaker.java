@@ -39,6 +39,8 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         desktopPane = new javax.swing.JDesktopPane();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
@@ -48,16 +50,40 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
         editMenu = new javax.swing.JMenu();
         cutMenuItem = new javax.swing.JMenuItem();
         copyMenuItem = new javax.swing.JMenuItem();
-        pasteMenuItem = new javax.swing.JMenuItem();
-        deleteMenuItem = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
         helpMenu = new javax.swing.JMenu();
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setText("status:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 5, 340, 20));
+
+        getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_END);
+
+        javax.swing.GroupLayout desktopPaneLayout = new javax.swing.GroupLayout(desktopPane);
+        desktopPane.setLayout(desktopPaneLayout);
+        desktopPaneLayout.setHorizontalGroup(
+            desktopPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 510, Short.MAX_VALUE)
+        );
+        desktopPaneLayout.setVerticalGroup(
+            desktopPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 287, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(desktopPane, java.awt.BorderLayout.CENTER);
 
         menuBar.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
 
@@ -92,29 +118,51 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
 
         cutMenuItem.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         cutMenuItem.setMnemonic('t');
-        cutMenuItem.setText("ຈັດການຂໍ້ມູນສະມາຊິກ");
+        cutMenuItem.setText("ຂໍ້ມູນສະມາຊິກ");
         editMenu.add(cutMenuItem);
 
         copyMenuItem.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         copyMenuItem.setMnemonic('y');
-        copyMenuItem.setText("Copy");
+        copyMenuItem.setText("ຂໍ້ມູນເຂົ້າສູ່ລະບົບ");
         editMenu.add(copyMenuItem);
 
-        pasteMenuItem.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        pasteMenuItem.setMnemonic('p');
-        pasteMenuItem.setText("Paste");
-        editMenu.add(pasteMenuItem);
+        jMenuItem5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jMenuItem5.setText("ຂໍ້ມູນລາຍຈ່າຍພິເສດ");
+        editMenu.add(jMenuItem5);
 
-        deleteMenuItem.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        deleteMenuItem.setMnemonic('d');
-        deleteMenuItem.setText("Delete");
-        editMenu.add(deleteMenuItem);
+        jMenuItem6.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jMenuItem6.setText("ຂໍ້ມູນງົມປະມານ");
+        editMenu.add(jMenuItem6);
+
+        jMenuItem7.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jMenuItem7.setText("ຂໍ້ມູນຊື້ອຸປະກອນ");
+        editMenu.add(jMenuItem7);
+
+        jMenuItem9.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jMenuItem9.setText("ຂໍ້ມູນປະເພດອຸປະກອນ");
+        editMenu.add(jMenuItem9);
 
         menuBar.add(editMenu);
 
         jMenu2.setText("ຂື້ນແຜ່ນ");
         jMenu2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+
+        jMenuItem2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jMenuItem2.setText("ເພີ່ມແຜນງານ");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem2);
+
+        jMenuItem4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jMenuItem4.setText("ຂຽນແຜນງານ");
+        jMenu2.add(jMenuItem4);
+
+        jMenuItem8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jMenuItem8.setText("Commit ແຜ່ນງານ");
+        jMenu2.add(jMenuItem8);
 
         menuBar.add(jMenu2);
 
@@ -140,17 +188,6 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
 
         setJMenuBar(menuBar);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 312, Short.MAX_VALUE)
-        );
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -166,6 +203,16 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
                 
                 
     }//GEN-LAST:event_saveMenuItemActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+     
+        frmPlanManager planManager=new frmPlanManager();
+        planManager.setTitle("Plan Manager");
+        desktopPane.add(planManager);
+        planManager.show();
+        
+        
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -207,18 +254,24 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
     private javax.swing.JMenuItem contentMenuItem;
     private javax.swing.JMenuItem copyMenuItem;
     private javax.swing.JMenuItem cutMenuItem;
-    private javax.swing.JMenuItem deleteMenuItem;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JMenuBar menuBar;
-    private javax.swing.JMenuItem pasteMenuItem;
     private javax.swing.JMenuItem saveMenuItem;
     // End of variables declaration//GEN-END:variables
 
