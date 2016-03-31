@@ -45,8 +45,8 @@ public class frmPlanManager extends javax.swing.JInternalFrame {
         jLabel1.setBackground(new java.awt.Color(153, 153, 153));
         jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
         jLabel1.setText("ຫົວຂໍ້ແຜ່ນການ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 90, 30));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 410, 40));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 90, 30));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 410, 40));
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
