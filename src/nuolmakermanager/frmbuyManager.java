@@ -9,12 +9,12 @@ package nuolmakermanager;
  *
  * @author xang-
  */
-public class buy extends javax.swing.JInternalFrame {
+public class frmbuyManager extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form buy
      */
-    public buy() {
+    public frmbuyManager() {
         initComponents();
     }
 
@@ -34,7 +34,6 @@ public class buy extends javax.swing.JInternalFrame {
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -44,14 +43,21 @@ public class buy extends javax.swing.JInternalFrame {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jTextField6 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+
+        setClosable(true);
+        setIconifiable(true);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setPreferredSize(new java.awt.Dimension(590, 400));
@@ -63,6 +69,7 @@ public class buy extends javax.swing.JInternalFrame {
 
         jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Saysettha OT", 0, 11)); // NOI18N
+        jTextField1.setText("ເລືອກເງິນແຜ່ນງານ *");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -71,8 +78,8 @@ public class buy extends javax.swing.JInternalFrame {
         jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 200, 30));
 
         jButton1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton1.setText("ເລືອກເງິນແຜ່ນງານ");
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 150, 30));
+        jButton1.setText("ເລືອກ");
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 70, 30));
 
         jTextField2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 270, 30));
@@ -83,21 +90,17 @@ public class buy extends javax.swing.JInternalFrame {
         jTextField5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 270, 30));
 
-        jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jLabel1.setText("ລາຄາ");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 50, 30));
-
         jLabel2.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jLabel2.setText("ຊື່ອຸປະກອນ");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 70, 30));
+        jLabel2.setText("ຊື່ອຸປະກອນ *");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 80, 30));
 
         jLabel3.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jLabel3.setText("ຊະນິດ");
+        jLabel3.setText("ຊະນິດ *");
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 50, 30));
 
         jLabel4.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jLabel4.setText("ຈຳນວນ");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 50, 30));
+        jLabel4.setText("ຈຳນວນ *");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 60, 30));
 
         jComboBox1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -110,15 +113,15 @@ public class buy extends javax.swing.JInternalFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 70, 80));
+        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 80, 40));
 
         jButton6.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jButton6.setText("ລົບ");
-        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 70, 80));
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 80, 40));
 
         jButton7.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jButton7.setText("ຊື້ແລ້ວ");
-        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 70, 80));
+        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 80, 40));
 
         jButton8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jButton8.setText("ອັບເດດ");
@@ -127,40 +130,61 @@ public class buy extends javax.swing.JInternalFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 70, 80));
+        jPanel3.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 80, 40));
 
         jButton9.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton9.setText("ຍົກເລີກ");
+        jButton9.setText("...");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 260, 70, 80));
+        jPanel3.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 230, 30, 30));
+
+        jTextField8.setEditable(false);
+        jTextField8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 270, 30));
+
+        jLabel5.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        jLabel5.setText("ລາຍຈ່າຍພິເສດ");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 90, 30));
+
+        jButton10.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jButton10.setText("ຍົກເລີກ");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 290, 80, 40));
+
+        jLabel6.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        jLabel6.setText("ລາຄາ *");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 50, 30));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 490, 350));
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ລວມຍອດເງິນ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Saysettha OT", 0, 12))); // NOI18N
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField6.setEditable(false);
         jTextField6.setBackground(new java.awt.Color(0, 0, 0));
         jTextField6.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 210, 130));
-
-        jLabel6.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
-        jLabel6.setText("ລວມຍອດເງິນ");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 80, 40));
+        jPanel4.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 210, 100));
 
         jTextField7.setEditable(false);
         jTextField7.setBackground(new java.awt.Color(0, 0, 0));
         jTextField7.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 210, 130));
+        jPanel4.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 210, 100));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, 230, 350));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 240, 360));
         jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 10, 150, 20));
+
+        jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        jLabel1.setText("bin");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 10, 20, 20));
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
@@ -202,9 +226,14 @@ public class buy extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -215,6 +244,7 @@ public class buy extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -229,5 +259,6 @@ public class buy extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
 }

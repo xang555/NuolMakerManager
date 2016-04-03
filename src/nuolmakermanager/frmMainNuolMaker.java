@@ -161,7 +161,7 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
         jMenu2.add(jMenuItem4);
 
         jMenuItem8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jMenuItem8.setText("Commit ແຜ່ນງານ");
+        jMenuItem8.setText("Commit ແຜນງານ");
         jMenu2.add(jMenuItem8);
 
         menuBar.add(jMenu2);

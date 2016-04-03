@@ -66,15 +66,18 @@ public class frmMemberManager extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
+        setClosable(true);
+        setIconifiable(true);
+
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setPreferredSize(new java.awt.Dimension(557, 300));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ຂໍ້ມູນສະມາຊິກ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Saysettha OT", 0, 12))); // NOI18N
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, 200, 30));
+        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 90, 200, 30));
 
         jTextField2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -82,90 +85,90 @@ public class frmMemberManager extends javax.swing.JInternalFrame {
                 jTextField2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 200, 30));
+        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 200, 30));
 
         jTextField3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 200, 30));
+        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 200, 30));
 
         jComboBox1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 200, -1));
+        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 200, 200, -1));
 
         jTextField4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 110, 30));
+        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 150, 30));
 
         jTextField5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 200, 30));
+        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 200, 30));
 
         jTextField7.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, 200, 30));
+        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 200, 30));
 
         jTextField8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 20, 200, 30));
+        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 40, 200, 30));
 
         jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel1.setText("ນາມສະກຸນ");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 20, 70, 30));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 40, 70, 30));
 
         jLabel2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel2.setText("ລະຫັດນັກສືກສາ");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 80, 30));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 80, 30));
 
         jLabel3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel3.setText("ລະຫັດຜ່ານ");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 80, 70, 20));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 70, 20));
 
         jLabel4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel4.setText("ໜ້າທີ່");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 40, 20));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 40, 20));
 
         jLabel5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel5.setText("ຊື່ຜູ້ໃຊ້");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, 50, 20));
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 50, 20));
 
         jLabel6.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel6.setText("ຫ້ອງ");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 30, 20));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 30, 20));
 
         jLabel7.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel7.setText("ເບີໂທລະສັບ");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, 70, 20));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 70, 20));
 
         jLabel8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel8.setText("ຊື່");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 30, 20));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 30, 20));
 
         jLabel9.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel9.setText("ວັນເຂົ້າ");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 50, 20));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 50, 20));
 
         jLabel10.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel10.setText("ສະຖານະ");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 50, 30));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 50, 30));
 
         jLabel11.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel11.setText("ລະດັບຜູ້ໃຊ້");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 70, 20));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 70, 20));
 
         jLabel12.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel12.setText("ລຸ້ນ");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 30, 20));
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, 30, 20));
 
         jTextField11.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 90, 30));
+        jPanel3.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 140, 90, 30));
 
         jComboBox2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel3.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 180, -1));
+        jPanel3.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 180, -1));
 
         jComboBox3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel3.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 180, 160, -1));
+        jPanel3.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, 160, -1));
 
         jTextField9.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 180, 30));
+        jPanel3.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 180, 30));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 830, 260));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 830, 270));
 
         jButton1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jButton1.setText("ຄົ້ນຫາ");

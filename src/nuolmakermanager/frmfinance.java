@@ -76,7 +76,7 @@ public class frmfinance extends javax.swing.JInternalFrame {
 
         jLabel2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel2.setText("ແຜ່ນ");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 50, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 30, 30));
 
         jButton3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jButton3.setText("ເພີມ");

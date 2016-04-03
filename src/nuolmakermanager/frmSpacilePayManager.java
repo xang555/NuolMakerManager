@@ -9,12 +9,12 @@ package nuolmakermanager;
  *
  * @author xang-
  */
-public class frmSpecicePayManager extends javax.swing.JInternalFrame {
+public class frmSpacilePayManager extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form frmSpecicePayManager
+     * Creates new form frmPlanSpacilePayManager
      */
-    public frmSpecicePayManager() {
+    public frmSpacilePayManager() {
         initComponents();
     }
 
@@ -39,10 +39,12 @@ public class frmSpecicePayManager extends javax.swing.JInternalFrame {
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jTextField4 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+
+        setClosable(true);
+        setIconifiable(true);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(552, 200));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -82,17 +84,13 @@ public class frmSpecicePayManager extends javax.swing.JInternalFrame {
         jLabel3.setText("ຊື່ລາຍຈ່າຍພິເສດ");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, -1));
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ລວມເປັນເງິນ(ກິບ)", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Saysettha OT", 0, 12))); // NOI18N
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField4.setBackground(new java.awt.Color(0, 0, 0));
         jTextField4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 180, 70));
-
-        jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jLabel1.setText("ລວມເປັນເງິນ(ກິບ)");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 100, 40));
+        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 180, 100));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, 210, 180));
 
@@ -127,7 +125,6 @@ public class frmSpecicePayManager extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
