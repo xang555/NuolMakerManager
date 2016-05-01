@@ -67,6 +67,9 @@
                 <Property name="mnemonic" type="int" value="116"/>
                 <Property name="text" type="java.lang.String" value="&#xe82;&#xecd;&#xec9;&#xea1;&#xeb9;&#xe99;&#xeaa;&#xeb0;&#xea1;&#xeb2;&#xe8a;&#xeb4;&#xe81;"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cutMenuItemActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="copyMenuItem">
               <Properties>
@@ -76,6 +79,9 @@
                 <Property name="mnemonic" type="int" value="121"/>
                 <Property name="text" type="java.lang.String" value="&#xe82;&#xecd;&#xec9;&#xea1;&#xeb9;&#xe99;&#xec0;&#xe82;&#xebb;&#xec9;&#xeb2;&#xeaa;&#xeb9;&#xec8;&#xea5;&#xeb0;&#xe9a;&#xebb;&#xe9a;"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="copyMenuItemActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
               <Properties>
@@ -92,6 +98,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#xe82;&#xecd;&#xec9;&#xea1;&#xeb9;&#xe99;&#xe87;&#xebb;&#xea1;&#xe9b;&#xeb0;&#xea1;&#xeb2;&#xe99;"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem6ActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
               <Properties>
@@ -249,7 +258,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="287" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="253" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>

@@ -80,7 +80,7 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
         );
         desktopPaneLayout.setVerticalGroup(
             desktopPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 287, Short.MAX_VALUE)
+            .addGap(0, 253, Short.MAX_VALUE)
         );
 
         getContentPane().add(desktopPane, java.awt.BorderLayout.CENTER);
@@ -119,11 +119,21 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
         cutMenuItem.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         cutMenuItem.setMnemonic('t');
         cutMenuItem.setText("ຂໍ້ມູນສະມາຊິກ");
+        cutMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cutMenuItemActionPerformed(evt);
+            }
+        });
         editMenu.add(cutMenuItem);
 
         copyMenuItem.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         copyMenuItem.setMnemonic('y');
         copyMenuItem.setText("ຂໍ້ມູນເຂົ້າສູ່ລະບົບ");
+        copyMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                copyMenuItemActionPerformed(evt);
+            }
+        });
         editMenu.add(copyMenuItem);
 
         jMenuItem5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
@@ -132,6 +142,11 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
 
         jMenuItem6.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jMenuItem6.setText("ຂໍ້ມູນງົມປະມານ");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         editMenu.add(jMenuItem6);
 
         jMenuItem7.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
@@ -213,6 +228,24 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void cutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cutMenuItemActionPerformed
+      //  frmMemberManager mem=new frmMemberManager();
+        nuolmakermanager.frmMemberManager mem1=new nuolmakermanager.frmMemberManager();
+          mem1.show();
+                 
+                  
+    }//GEN-LAST:event_cutMenuItemActionPerformed
+
+    private void copyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyMenuItemActionPerformed
+        // TODO add your handling code here:
+        nuolmakermanager.frmSystemLoginMaanger st=new nuolmakermanager.frmSystemLoginMaanger();
+        st.show();
+    }//GEN-LAST:event_copyMenuItemActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments

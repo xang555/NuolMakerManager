@@ -29,12 +29,12 @@ public class frmSystemLoginMaanger extends javax.swing.JInternalFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtuserpassword = new javax.swing.JTextField();
+        btchoose = new javax.swing.JButton();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btrevoke = new javax.swing.JButton();
+        btgrant = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -42,19 +42,19 @@ public class frmSystemLoginMaanger extends javax.swing.JInternalFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(485, 150));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.setEditable(false);
-        jTextField1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jTextField1.setText("ລະຫັດສະມາຊີກ");
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 170, 30));
+        txtuserpassword.setEditable(false);
+        txtuserpassword.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        txtuserpassword.setText("ລະຫັດສະມາຊີກ");
+        jPanel1.add(txtuserpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 170, 30));
 
-        jButton1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton1.setText("ເລືອກ");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btchoose.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btchoose.setText("ເລືອກ");
+        btchoose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btchooseActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 60, 30));
+        jPanel1.add(btchoose, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 60, 30));
 
         jRadioButton1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jRadioButton1.setText("User");
@@ -64,13 +64,13 @@ public class frmSystemLoginMaanger extends javax.swing.JInternalFrame {
         jRadioButton2.setText("Admin");
         jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
 
-        jButton2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton2.setText("revork");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
+        btrevoke.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btrevoke.setText("revork");
+        jPanel1.add(btrevoke, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
 
-        jButton3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton3.setText("grant");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, -1, -1));
+        btgrant.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btgrant.setText("grant");
+        jPanel1.add(btgrant, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, -1, -1));
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
@@ -97,22 +97,22 @@ public class frmSystemLoginMaanger extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btchooseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btchooseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btchooseActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btchoose;
+    private javax.swing.JButton btgrant;
+    private javax.swing.JButton btrevoke;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txtuserpassword;
     // End of variables declaration//GEN-END:variables
 }

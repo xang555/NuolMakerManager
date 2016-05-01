@@ -29,13 +29,13 @@ public class frmCommit extends javax.swing.JInternalFrame {
         java.awt.GridBagConstraints gridBagConstraints;
 
         jPanel3 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btcancel = new javax.swing.JButton();
+        btok = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        jldoneplane = new javax.swing.JList<String>();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList2 = new javax.swing.JList<>();
+        jlundoneplane = new javax.swing.JList<String>();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -50,8 +50,8 @@ public class frmCommit extends javax.swing.JInternalFrame {
         jPanel3.setPreferredSize(new java.awt.Dimension(618, 105));
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
-        jButton3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton3.setText("Cancle");
+        btcancel.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btcancel.setText("Cancle");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -59,10 +59,10 @@ public class frmCommit extends javax.swing.JInternalFrame {
         gridBagConstraints.ipady = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(30, 19, 38, 183);
-        jPanel3.add(jButton3, gridBagConstraints);
+        jPanel3.add(btcancel, gridBagConstraints);
 
-        jButton5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton5.setText("OK");
+        btok.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btok.setText("OK");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -70,20 +70,20 @@ public class frmCommit extends javax.swing.JInternalFrame {
         gridBagConstraints.ipady = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(30, 220, 38, 0);
-        jPanel3.add(jButton5, gridBagConstraints);
+        jPanel3.add(btok, gridBagConstraints);
 
         getContentPane().add(jPanel3, java.awt.BorderLayout.PAGE_END);
 
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel4.setLayout(new java.awt.GridBagLayout());
 
-        jList1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        jldoneplane.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jldoneplane.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+            public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(jldoneplane);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -98,13 +98,13 @@ public class frmCommit extends javax.swing.JInternalFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 20, 27, 44);
         jPanel4.add(jScrollPane1, gridBagConstraints);
 
-        jList2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jList2.setModel(new javax.swing.AbstractListModel<String>() {
+        jlundoneplane.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jlundoneplane.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+            public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane2.setViewportView(jList2);
+        jScrollPane2.setViewportView(jlundoneplane);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -166,17 +166,17 @@ public class frmCommit extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btcancel;
+    private javax.swing.JButton btok;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JList<String> jList2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JList<String> jldoneplane;
+    private javax.swing.JList<String> jlundoneplane;
     // End of variables declaration//GEN-END:variables
 }

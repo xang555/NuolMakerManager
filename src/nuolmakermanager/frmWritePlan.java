@@ -33,21 +33,21 @@ public class frmWritePlan extends javax.swing.JInternalFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        btchoose = new javax.swing.JButton();
+        txtprice = new javax.swing.JTextField();
+        txtequipname = new javax.swing.JTextField();
+        txtamount = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        combotype = new javax.swing.JComboBox<String>();
+        btadd = new javax.swing.JButton();
+        btdelete = new javax.swing.JButton();
+        btupdate = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jButton9 = new javax.swing.JButton();
+        txtspecialpay = new javax.swing.JTextField();
+        btbrown = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
@@ -92,18 +92,18 @@ public class frmWritePlan extends javax.swing.JInternalFrame {
         });
         jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 200, 30));
 
-        jButton1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton1.setText("ເລືອກ");
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 60, 30));
+        btchoose.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btchoose.setText("ເລືອກ");
+        jPanel3.add(btchoose, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 60, 30));
 
-        jTextField2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 270, 30));
+        txtprice.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jPanel3.add(txtprice, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 270, 30));
 
-        jTextField3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 270, 30));
+        txtequipname.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jPanel3.add(txtequipname, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 270, 30));
 
-        jTextField5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 270, 30));
+        txtamount.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jPanel3.add(txtamount, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 270, 30));
 
         jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
         jLabel1.setText("ລາຄາ");
@@ -121,38 +121,38 @@ public class frmWritePlan extends javax.swing.JInternalFrame {
         jLabel4.setText("ຈຳນວນ");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 50, 30));
 
-        jComboBox1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 270, 30));
+        combotype.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        combotype.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel3.add(combotype, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 270, 30));
 
-        jButton3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton3.setText("ເພີມ");
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 100, 40));
+        btadd.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btadd.setText("ເພີມ");
+        jPanel3.add(btadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 100, 40));
 
-        jButton4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton4.setText("ລົບ");
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 100, 40));
+        btdelete.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btdelete.setText("ລົບ");
+        jPanel3.add(btdelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 100, 40));
 
-        jButton2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton2.setText("ອັບເດດ");
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, 100, 40));
+        btupdate.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btupdate.setText("ອັບເດດ");
+        jPanel3.add(btupdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, 100, 40));
 
         jLabel5.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
         jLabel5.setText("ລາຍຈ່າຍພິເສດ");
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 90, 30));
 
-        jTextField8.setEditable(false);
-        jTextField8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 270, 30));
+        txtspecialpay.setEditable(false);
+        txtspecialpay.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jPanel3.add(txtspecialpay, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 270, 30));
 
-        jButton9.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton9.setText("...");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btbrown.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btbrown.setText("...");
+        btbrown.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btbrownActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 230, 30, 30));
+        jPanel3.add(btbrown, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 230, 30, 30));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 510, 350));
 
@@ -184,18 +184,18 @@ public class frmWritePlan extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void btbrownActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbrownActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_btbrownActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton btadd;
+    private javax.swing.JButton btbrown;
+    private javax.swing.JButton btchoose;
+    private javax.swing.JButton btdelete;
+    private javax.swing.JButton btupdate;
+    private javax.swing.JComboBox<String> combotype;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -208,11 +208,11 @@ public class frmWritePlan extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField txtamount;
+    private javax.swing.JTextField txtequipname;
+    private javax.swing.JTextField txtprice;
+    private javax.swing.JTextField txtspecialpay;
     // End of variables declaration//GEN-END:variables
 }

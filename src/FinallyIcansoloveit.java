@@ -15,6 +15,7 @@ public class FinallyIcansoloveit {
         System.out.println("ka nuek va mun pen y...");
         System.out.println("soud thaiy ka paeng dai");
         System.out.println("hao khao pai properties mun leual ao JDK 7 jueng perd dai");
+        System.out.println("Frm Buy Manager");
     }
           
 }

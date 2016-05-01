@@ -29,16 +29,16 @@ public class frmSpacilePayManager extends javax.swing.JInternalFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtcash = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jTextField3 = new javax.swing.JTextField();
+        btupdate = new javax.swing.JButton();
+        btchoose = new javax.swing.JButton();
+        btdelect = new javax.swing.JButton();
+        btadd = new javax.swing.JButton();
+        txtproductname = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jTextField4 = new javax.swing.JTextField();
+        txttotal = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -53,32 +53,32 @@ public class frmSpacilePayManager extends javax.swing.JInternalFrame {
         jLabel2.setText("ເປັນເງິນ");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, -1, -1));
 
-        jTextField1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 220, 30));
+        txtcash.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jPanel1.add(txtcash, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 220, 30));
 
         jTextField2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jTextField2.setText("ແຜນງານ");
         jTextField2.setEnabled(false);
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 220, 30));
 
-        jButton1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton1.setText("ອັບເດດ");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 150, -1, -1));
+        btupdate.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btupdate.setText("ອັບເດດ");
+        jPanel1.add(btupdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 150, -1, -1));
 
-        jButton2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton2.setText("ເລືອກ");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 70, 30));
+        btchoose.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btchoose.setText("ເລືອກ");
+        jPanel1.add(btchoose, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 70, 30));
 
-        jButton3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton3.setText("ລົບ");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 70, -1));
+        btdelect.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btdelect.setText("ລົບ");
+        jPanel1.add(btdelect, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 70, -1));
 
-        jButton4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton4.setText("ເພິມ");
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 70, -1));
+        btadd.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btadd.setText("ເພິມ");
+        jPanel1.add(btadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 70, -1));
 
-        jTextField3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 220, 30));
+        txtproductname.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        jPanel1.add(txtproductname, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 220, 30));
 
         jLabel3.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel3.setText("ຊື່ລາຍຈ່າຍພິເສດ");
@@ -87,10 +87,10 @@ public class frmSpacilePayManager extends javax.swing.JInternalFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ລວມເປັນເງິນ(ກິບ)", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Saysettha OT", 0, 12))); // NOI18N
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField4.setBackground(new java.awt.Color(0, 0, 0));
-        jTextField4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 180, 100));
+        txttotal.setBackground(new java.awt.Color(0, 0, 0));
+        txttotal.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        txttotal.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel3.add(txttotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 180, 100));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, 210, 180));
 
@@ -121,10 +121,10 @@ public class frmSpacilePayManager extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton btadd;
+    private javax.swing.JButton btchoose;
+    private javax.swing.JButton btdelect;
+    private javax.swing.JButton btupdate;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
@@ -132,9 +132,9 @@ public class frmSpacilePayManager extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField txtcash;
+    private javax.swing.JTextField txtproductname;
+    private javax.swing.JTextField txttotal;
     // End of variables declaration//GEN-END:variables
 }

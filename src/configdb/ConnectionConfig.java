@@ -15,7 +15,5 @@ public interface ConnectionConfig {
      public static final String Username="root";
       public static final String Password="";
      public static final String ConnectUri="jdbc:mysql://localhost:3306/"+dbName;
-     
-     
-    
+ 
 }

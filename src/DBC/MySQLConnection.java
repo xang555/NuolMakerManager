@@ -11,9 +11,9 @@ public class MySQLConnection
     {
         try 
         {
-            String url="jdbc:mysql://localhost/nuolmaker";
-            String user="";
-            String pass="";
+            String url="jdbc:mysql://localhost:8181/nuolmaker";
+            String user="root";
+            String pass="onepiece";
             String driver="com.mysql.jdbc.Driver";
             Class.forName(driver);
             return DriverManager.getConnection(url, user, pass);
