@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dialog;
+package Dialogs;
 
 /**
  *
  * @author xang-
  */
-public class DialogPlanSpecilePayManager extends javax.swing.JDialog {
+public class DialogBinSpecicePayManager extends javax.swing.JDialog {
 
     /**
-     * Creates new form DialogPlanSpecilePayManager
+     * Creates new form DialogSpecicePayManager
      */
-    public DialogPlanSpecilePayManager(java.awt.Frame parent, boolean modal) {
+    public DialogBinSpecicePayManager(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -43,7 +43,7 @@ public class DialogPlanSpecilePayManager extends javax.swing.JDialog {
         jTable1 = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -108,28 +108,19 @@ public class DialogPlanSpecilePayManager extends javax.swing.JDialog {
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
-        jPanel4.setPreferredSize(new java.awt.Dimension(660, 50));
+        jPanel4.setPreferredSize(new java.awt.Dimension(681, 50));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setText("ok");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 80, -1));
+        jButton2.setText("Cancle");
+        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 80, 30));
 
-        jButton6.setText("Cancle");
-        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 80, -1));
+        jButton5.setText("Ok");
+        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 90, 30));
 
         getContentPane().add(jPanel4, java.awt.BorderLayout.PAGE_END);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -148,20 +139,21 @@ public class DialogPlanSpecilePayManager extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DialogPlanSpecilePayManager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DialogBinSpecicePayManager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DialogPlanSpecilePayManager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DialogBinSpecicePayManager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DialogPlanSpecilePayManager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DialogBinSpecicePayManager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DialogPlanSpecilePayManager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DialogBinSpecicePayManager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                DialogPlanSpecilePayManager dialog = new DialogPlanSpecilePayManager(new javax.swing.JFrame(), true);
+                DialogBinSpecicePayManager dialog = new DialogBinSpecicePayManager(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -178,7 +170,7 @@ public class DialogPlanSpecilePayManager extends javax.swing.JDialog {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;

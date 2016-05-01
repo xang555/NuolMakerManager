@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package core;
+package DBC;
 
 import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
@@ -20,7 +20,8 @@ public class connectnuolmakerdb {
      
      Connection con=null;
      try {
-         con=(Connection) DriverManager.getConnection(configdb.ConnectionConfig.ConnectUri, configdb.ConnectionConfig.Username, configdb.ConnectionConfig.Password);
+         con=(Connection) 
+                 DriverManager.getConnection(configdb.ConnectionConfig.ConnectUri, configdb.ConnectionConfig.Username, configdb.ConnectionConfig.Password);
     
      return con;
      } catch (SQLException ex) {

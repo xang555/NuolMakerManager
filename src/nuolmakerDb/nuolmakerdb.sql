@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `nuolmaker`.`finance` (
   `fId` INT NOT NULL,
   `planId` INT NOT NULL,
   `MId` INT NOT NULL,
-  `fmoney` DECIMAL(0,12) NULL,
+  `fmoney` DECIMAL(12,2) NULL,
   PRIMARY KEY (`fId`, `planId`, `MId`),
   INDEX `fk_finance_Plan1_idx` (`planId` ASC),
   INDEX `fk_finance_member1_idx` (`MId` ASC),
@@ -175,7 +175,7 @@ CREATE TABLE IF NOT EXISTS `nuolmaker`.`bindetail` (
   `typeId` INT NOT NULL,
   `bName` VARCHAR(45) NULL,
   `bAmount` INT NULL,
-  `bPrice` DECIMAL(0,10) NULL,
+  `bPrice` DECIMAL(10,2) NULL,
   PRIMARY KEY (`bindId`, `bin`, `typeId`),
   INDEX `fk_bindetail_bin1_idx` (`bin` ASC),
   INDEX `fk_bindetail_accessoritype1_idx` (`typeId` ASC),
@@ -222,13 +222,13 @@ ENGINE = InnoDB;
 -- Table `nuolmaker`.`orderdetail`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `nuolmaker`.`orderdetail` (
-  `rId` INT(11) NOT NULL,
+  `rId` INT NOT NULL,
   `pName` VARCHAR(45) NULL DEFAULT NULL,
   `ptype` VARCHAR(45) NULL DEFAULT NULL,
   `pAmount` INT(11) NULL DEFAULT NULL,
   `pPrice` DECIMAL(10,2) NULL DEFAULT NULL,
   PRIMARY KEY (`rId`),
-  CONSTRAINT `fk_orderDetail_order`
+  CONSTRAINT `fk_orderDetail_order2`
     FOREIGN KEY (`rId`)
     REFERENCES `nuolmaker`.`planorder` (`rId`)
     ON DELETE NO ACTION
@@ -245,7 +245,7 @@ CREATE TABLE IF NOT EXISTS `nuolmaker`.`palnspecilepay` (
   `MId` INT NOT NULL,
   `planId` INT NOT NULL,
   `ppName` VARCHAR(100) NULL,
-  `ppPay` DECIMAL(0,12) NULL,
+  `ppPay` DECIMAL(12,2) NULL,
   PRIMARY KEY (`ppId`, `MId`, `planId`),
   INDEX `fk_palnspecilePlan_Plan1_idx` (`planId` ASC),
   INDEX `fk_palnspecilePay_member1_idx` (`MId` ASC),
@@ -269,7 +269,7 @@ CREATE TABLE IF NOT EXISTS `nuolmaker`.`specilebin` (
   `ssbin` INT NOT NULL,
   `bin` INT NOT NULL,
   `ssname` VARCHAR(45) NULL,
-  `sspay` DECIMAL(0,10) NULL,
+  `sspay` DECIMAL(10,2) NULL,
   `ssdate` DATETIME NULL,
   PRIMARY KEY (`ssbin`, `bin`),
   INDEX `fk_specilebin_bin1_idx` (`bin` ASC),
