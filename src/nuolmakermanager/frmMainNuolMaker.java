@@ -96,6 +96,11 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
 
         jMenuItem1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jMenuItem1.setText("ອັດຕາແລກປ່ຽນ");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem1);
 
         fileMenu.add(jMenu1);
@@ -138,6 +143,11 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
 
         jMenuItem5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jMenuItem5.setText("ຂໍ້ມູນລາຍຈ່າຍພິເສດ");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         editMenu.add(jMenuItem5);
 
         jMenuItem6.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
@@ -151,10 +161,20 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
 
         jMenuItem7.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jMenuItem7.setText("ຂໍ້ມູນຊື້ອຸປະກອນ");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
         editMenu.add(jMenuItem7);
 
         jMenuItem9.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jMenuItem9.setText("ຂໍ້ມູນປະເພດອຸປະກອນ");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
         editMenu.add(jMenuItem9);
 
         menuBar.add(editMenu);
@@ -173,10 +193,20 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
 
         jMenuItem4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jMenuItem4.setText("ຂຽນແຜນງານ");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem4);
 
         jMenuItem8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jMenuItem8.setText("Commit ແຜນງານ");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem8);
 
         menuBar.add(jMenu2);
@@ -232,6 +262,7 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
     private void cutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cutMenuItemActionPerformed
       //  frmMemberManager mem=new frmMemberManager();
         nuolmakermanager.frmMemberManager mem1=new nuolmakermanager.frmMemberManager();
+        desktopPane.add(mem1);
           mem1.show();
                  
                   
@@ -240,12 +271,58 @@ public class frmMainNuolMaker extends javax.swing.JFrame {
     private void copyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyMenuItemActionPerformed
         // TODO add your handling code here:
         nuolmakermanager.frmSystemLoginMaanger st=new nuolmakermanager.frmSystemLoginMaanger();
+        desktopPane.add(st);
         st.show();
     }//GEN-LAST:event_copyMenuItemActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
+        frmfinance fin=new frmfinance();
+        desktopPane.add(fin);
+        fin.show();
+        
     }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+       frmSpacilePayManager spcp=new frmSpacilePayManager();
+       desktopPane.add(spcp);
+       spcp.show();
+       
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        // TODO add your handling code here:
+        frmbuyManager by=new frmbuyManager();
+        desktopPane.add(by);
+        by.show();
+        
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        // TODO add your handling code here:
+        frmtypeAccessories typacc=new frmtypeAccessories();
+        desktopPane.add(typacc);
+        typacc.show();
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        frmPlanManager pm=new frmPlanManager();
+        desktopPane.add(pm);
+        pm.show();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        // TODO add your handling code here:
+        frmCommit commit=new frmCommit();
+        desktopPane.add(commit);
+        commit.show();
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments

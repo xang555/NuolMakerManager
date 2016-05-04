@@ -36,8 +36,8 @@ public class frmCommit extends javax.swing.JInternalFrame {
         jldoneplane = new javax.swing.JList<String>();
         jScrollPane2 = new javax.swing.JScrollPane();
         jlundoneplane = new javax.swing.JList<String>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btundone = new javax.swing.JButton();
+        btdone = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -78,11 +78,6 @@ public class frmCommit extends javax.swing.JInternalFrame {
         jPanel4.setLayout(new java.awt.GridBagLayout());
 
         jldoneplane.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jldoneplane.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(jldoneplane);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -100,7 +95,7 @@ public class frmCommit extends javax.swing.JInternalFrame {
 
         jlundoneplane.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jlundoneplane.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Auto Robot", "Manual Robot", "Color Sencor Robot", " " };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
@@ -119,23 +114,28 @@ public class frmCommit extends javax.swing.JInternalFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 27, 0);
         jPanel4.add(jScrollPane2, gridBagConstraints);
 
-        jButton1.setText("<");
+        btundone.setText("<");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.ipadx = 9;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(7, 10, 0, 0);
-        jPanel4.add(jButton1, gridBagConstraints);
+        jPanel4.add(btundone, gridBagConstraints);
 
-        jButton2.setText(">");
+        btdone.setText(">");
+        btdone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btdoneActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.ipadx = 9;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(70, 10, 0, 0);
-        jPanel4.add(jButton2, gridBagConstraints);
+        jPanel4.add(btdone, gridBagConstraints);
 
         jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel1.setText("ແຜ່ນການທີ່ອະນຸມັດແລ້ວ");
@@ -164,12 +164,18 @@ public class frmCommit extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btdoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btdoneActionPerformed
+        // TODO add your handling code here:
+        String list;
+ 
+    }//GEN-LAST:event_btdoneActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btcancel;
+    private javax.swing.JButton btdone;
     private javax.swing.JButton btok;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btundone;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel3;
